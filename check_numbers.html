@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" step="any/" id="data">
+    <button onclick="check()">check</button>
+    <h1 id="res"></h1>
+    
+
+    <script>
+        function check(){
+            var x = document.getElementById('data').value;
+            //var result=Math.sign(x);
+
+            if(x>0){
+                result='This is positive number'
+            }
+            else if(x<0){
+                result='This is a negative number'
+            }
+            else if(x==0){
+                result='this is zero'
+            }
+            else{
+                result="This not a number"
+            }
+            document.getElementById('res').innerText=result;
+             
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salary slip</title>
+
+</head>
+
+<body>
+    <script>
+        function sal() {
+            var x = parseInt(document.getElementById("b").value);
+            var ta = x * 15 / 100;
+            document.getElementById("t").value = ta;
+            var da = x * 20 / 100;
+            document.getElementById("d").value = da;
+            var hra = x * 50 / 100;
+            document.getElementById("h").value = hra;
+            var pf = x * 8 / 100;
+            document.getElementById("p").value = pf;
+            var net_pay = x + ta + da + hra - pf;
+            document.getElementById("net").value = net_pay;
+        }
+    </script>
+    <table class="bg-info text-dark">
+    <div class="container bg-info text-dark">
+        <div class="row">
+        <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-5">
+    enter name<input type="n"><br><br>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+    enter basic salary<input type="text" id="b">
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+    <button onclick="sal()">salary</button> 
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+    TA
+    <input type="text" id="t"> 
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+    DA
+    <input type="text" id="d">
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+    HRA
+    <input type="text" id="h">
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+    PF
+    <input type="text" id="p">
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+             NET_PAY
+    <input type="text" id="net">
+    </div>
+    </div>
+
+
+
+    </div>
+    </div>
+    </div>
+    </table>
+    
+
+</body>
+
+</html>
